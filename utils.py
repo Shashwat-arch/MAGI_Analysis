@@ -10,8 +10,8 @@ try:
 except:
     def patch_sklearn(): return
 
-from magi.clustering_metric import clustering_metrics
-from magi.batch_kmeans_cuda import kmeans
+from clustering_metric import clustering_metrics
+from batch_kmeans_cuda import kmeans
 
 
 def get_sim(batch, adj, wt=20, wl=3):
